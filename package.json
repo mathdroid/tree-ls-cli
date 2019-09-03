@@ -1,0 +1,43 @@
+{
+  "name": "tree-ls-cli",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/tree-ls-cli.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "bin": {
+    "tree-ls-cli": "./bin/tree-ls-cli.js"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.3",
+    "husky": "^3.0.5",
+    "tsdx": "^0.9.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "directory-tree": "^2.2.4"
+  }
+}
