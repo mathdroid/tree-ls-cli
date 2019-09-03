@@ -1,6 +1,6 @@
-# TSDX Bootstrap
+# tree-ls-cli
 
-This project was bootstrapped with [TSDX](https://github.com/jaredpalmer/tsdx).
+Shows tree of a directory, with size
 
 ## Local Development
 
